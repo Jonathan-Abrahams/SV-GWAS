@@ -1,8 +1,9 @@
 # SV-GWAS
 
 First we run FSM-lite on the genomes
+```
 ./fsm-lite/fsm-lite -v -l fsm_files.txt -t tmp_idx  > fsm_kmers.txt
-
+```
 We then seperate the occorunces from the sequences using AWK
 ```
 awk '{print $1}' fsm_kmers.txt >fsm_kmers_seq_only.txt
